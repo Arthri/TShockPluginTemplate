@@ -22,14 +22,12 @@ namespace $safeprojectname$
 
         public override void Initialize()
         {
-
         }
 
         protected override void Dispose(bool disposing)
         {
             if (disposing)
             {
-
             }
             base.Dispose(disposing);
         }
