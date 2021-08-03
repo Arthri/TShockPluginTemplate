@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Reflection;
 using Terraria;
 using TerrariaApi.Server;
@@ -18,10 +18,6 @@ namespace $safeprojectname$
 
         public Plugin(Main game) : base(game)
         {
-            Console.WriteLine($"    {Name}  Copyright (C) $year$  {Author}");
-            Console.WriteLine($"    This program comes with ABSOLUTELY NO WARRANTY; see {Name}.COPYING for details");
-            Console.WriteLine($"    This is free software, and you are welcome to redistribute it");
-            Console.WriteLine($"    under certain conditions; see {Name}.COPYING for details.");
         }
 
         public override void Initialize()
