@@ -17,8 +17,12 @@
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
   </TemplateData>
   <TemplateContent>
-    <Project TargetFileName="Plugin.csproj" File="Plugin.csproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="true" TargetFileName="Plugin.cs">Plugin.cs</ProjectItem>
+    <CustomParameters>
+      <CustomParameter Name="$pluginname$" Value="$safeprojectname$"/>
+      <CustomParameter Name="$pluginprefixedname$" Value="$safeprojectname$Plugin"/>
+    </CustomParameters>
+    <Project TargetFileName="$pluginprefixedname$.csproj" File="Plugin.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="$pluginname$.cs">Plugin.cs</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       </Folder>
